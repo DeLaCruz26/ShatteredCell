@@ -13,22 +13,27 @@ export default function Navbar() {
     return (
         <nav>
            <div className='logo'>
-               <h4><NavLink to='/'>Shattered Cell</NavLink></h4>
+               <h4>
+                   <NavLink to='/' className='logo'>Shattered Cell</NavLink>
+                </h4>
            </div>
-           <ul className='navlinks'>
-            <li className='link'>
-                <NavLink to='/repairs' className='links'>Repairs</NavLink>
-            </li>
-            <li className='link'>
-                <NavLink to='/services' className='links'>Services</NavLink>
-            </li>
-            <li className='link'>
-                <NavLink to='/schedule' className='links'>Schedule</NavLink>
-            </li>
-            <li className='link'>
-                <NavLink to='/contact-us' className='links'>Contact Us</NavLink>
-            </li>
+           <ul className={click ? 'navlinks active' : 'navlinks'}>
+                <li className='link'>
+                    <NavLink to='/repairs' className='links' onClick={closeMobileMenu}>Repairs</NavLink>
+                </li>
+                <li className='link'>
+                    <NavLink to='/services' className='links' onClick={closeMobileMenu}>Services</NavLink>
+                </li>
+                <li className='link'>
+                    <NavLink to='/schedule' className='links' onClick={closeMobileMenu}>Schedule</NavLink>
+                </li>
+                <li className='link'>
+                    <NavLink to='/contact' className='links' onClick={closeMobileMenu}>Contact</NavLink>
+                </li>
            </ul>
+           <div className='menu-icon' onClick={handleClick}>
+               {click ? <FaTimes /> : <FaBars />}
+           </div>
         </nav>
     )
 }

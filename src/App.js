@@ -4,6 +4,7 @@ import Home from './components/Home'
 import Repairs from './components/Repairs'
 import Services from './components/Services'
 import Schedule from './components/Schedule'
+import Contact from './components/Contact'
 import Navbar from './components/Navbar';
 
 function App() {
@@ -16,6 +17,7 @@ function App() {
           <Route path='/repairs' component={Repairs} />
           <Route path='/services' component={Services} />
           <Route path='/schedule' component={Schedule} />
+          <Route path='/contact' component={Contact} />
         </Switch>
       </Router>
     </div>
