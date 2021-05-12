@@ -57,7 +57,8 @@ nav {
 }
 
 .App {
-  background: url("./broken-phone.jpeg");
+  background: radial-gradient(at center center, #7f808070 0%, #3737387c 100%),
+    url("./broken-phone.jpeg");
   height: 100vh;
   background-size: center;
   background-position: center;
@@ -67,6 +68,49 @@ nav {
   cursor: pointer;
   color: white;
   display: none;
+}
+
+.showcase {
+  max-width: 800px;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+}
+
+.showcase h1 {
+  font-size: 50px;
+  color: rgba(182, 30, 30, 0.85);
+  font-weight: normal;
+  letter-spacing: 3px;
+  margin-bottom: 30px;
+}
+
+.showcase h2 {
+  font-size: 28px;
+  color: rgba(182, 30, 30, 0.85);
+  font-weight: lighter;
+  letter-spacing: 4px;
+}
+
+.showcase__btn-services {
+  border: white solid;
+  background-color: transparent;
+  color: rgba(182, 30, 30, 0.85);
+  padding: 10px 50px;
+  margin: 0 10px;
+  text-decoration: none;
+}
+
+.showcase__btn-schedule {
+  border: white solid 1px;
+  background-color: white;
+  color: rgba(182, 30, 30, 0.85);
+  padding: 10px 50px;
+  margin: 0 10px;
+  text-decoration: none;
 }
 
 @media screen and (max-width: 1020px) {
