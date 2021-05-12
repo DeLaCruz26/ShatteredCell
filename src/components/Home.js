@@ -8,8 +8,12 @@ export default function Home() {
             <h2>Device Repair Specialist</h2>
             <h1>Schedule your repair today</h1>
             <div className='showcase__buttons'>
-                <Link to='/services' className='showcase__btn-services'>SERVICES</Link>
-                <Link to='/schedule' className='showcase__btn-schedule'>SCHEDULE</Link>
+                <div className='showcase__btn-services'>
+                    <Link to='/services' className='services'>SERVICES</Link>
+                </div>
+                <div className='showcase__btn-schedule'>
+                    <Link to='/schedule' className='schedule'>SCHEDULE</Link>
+                </div>
             </div>
         </div>
     )

@@ -10,11 +10,11 @@ body {
 
 .links {
   text-decoration: none;
-  color: rgba(182, 30, 30, 0.85);
+  color: white;
 }
 
 .links:hover {
-  color: rgba(120, 87, 87, 0.85);
+  color: rgba(243, 237, 237, 0.85);
 }
 
 nav {
@@ -57,7 +57,7 @@ nav {
 }
 
 .App {
-  background: radial-gradient(at center center, #7f808070 0%, #3737387c 100%),
+  background: radial-gradient(at center center, #eff3f370 0%, #1111117c 100%),
     url("./broken-phone.jpeg");
   height: 100vh;
   background-size: center;
@@ -82,7 +82,7 @@ nav {
 
 .showcase h1 {
   font-size: 50px;
-  color: rgba(182, 30, 30, 0.85);
+  color: black;
   font-weight: normal;
   letter-spacing: 3px;
   margin-bottom: 30px;
@@ -90,7 +90,7 @@ nav {
 
 .showcase h2 {
   font-size: 28px;
-  color: rgba(182, 30, 30, 0.85);
+  color: black;
   font-weight: lighter;
   letter-spacing: 4px;
 }
@@ -98,19 +98,44 @@ nav {
 .showcase__btn-services {
   border: white solid;
   background-color: transparent;
-  color: rgba(182, 30, 30, 0.85);
   padding: 10px 50px;
-  margin: 0 10px;
+  margin: 5px 10px;
+}
+
+.services {
   text-decoration: none;
+  color: black;
+}
+
+.showcase__btn-services:hover {
+  transform: scale(1.2);
+  transition: transform 0.3s ease-in;
+}
+
+.schedule {
+  text-decoration: none;
+  color: black;
 }
 
 .showcase__btn-schedule {
   border: white solid 1px;
   background-color: white;
-  color: rgba(182, 30, 30, 0.85);
+  color: black;
   padding: 10px 50px;
   margin: 0 10px;
   text-decoration: none;
+}
+
+.showcase__btn-schedule:hover {
+  transform: scale(1.2);
+  transition: transform 0.3s ease-in;
+}
+
+.header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 10rem;
 }
 
 @media screen and (max-width: 1020px) {
