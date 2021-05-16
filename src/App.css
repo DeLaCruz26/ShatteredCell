@@ -138,6 +138,19 @@ nav {
   padding-top: 10rem;
 }
 
+.header span {
+  display: flex;
+  position: relative;
+}
+
+.form {
+  display: flex;
+  margin-top: 10rem;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
 @media screen and (max-width: 1020px) {
   body {
     overflow-x: hidden;
