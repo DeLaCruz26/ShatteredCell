@@ -7,7 +7,7 @@ import './Form.css'
 export default function Form() {
     const [submitted, setSubmitted] = useState(false)
 
-    submitForm = () => {
+    const submitForm = () => {
         setSubmitted(true)
     }
 

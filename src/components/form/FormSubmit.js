@@ -1,6 +1,6 @@
 import React from 'react'
 import useForm from './useForm'
-import validate from './validateForm'
+import validate from './validateInfo'
 import './Form.css'
 
 export default function FormSubmit({ submitForm }) {
