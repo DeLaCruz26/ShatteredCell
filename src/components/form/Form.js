@@ -1,4 +1,5 @@
 import React, { useState } from 'react'
+import { Modal } from './Modal'
 import { GlobalStyle, StyledButton, StyledError, StyledForm, StyledFormWrapper, StyledInput, StyledTextArea } from './Styles'
 
 export default function Form() {
@@ -10,6 +11,12 @@ export default function Form() {
 
     const [state, setState] = useState(initialState)
     const [error, setError] = useState('')
+
+    const [showModal, setShowModal] = useState(false)
+
+    const openModal = () => {
+        setShowModal(prev => !prev)
+    }
 
     const handleSubmit = event => {
         event.preventDefault()
@@ -66,7 +73,8 @@ export default function Form() {
                       <p>{error}</p>
                     </StyledError>  
                 )}
-                <StyledButton type='submit'>Submit</StyledButton>
+                <StyledButton type='submit' onClick={openModal}>Submit</StyledButton>
+                <Modal showModal={showModal} setShowModal={setShowModal} />
             </StyledForm>
         </StyledFormWrapper>
        </>
