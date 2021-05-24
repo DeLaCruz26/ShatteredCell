@@ -7,7 +7,7 @@ export const Modal = ({ showModal, setShowModal }) => {
             {showModal ? (
                 <Background>
                     <ModalWrapper showModal={showModal}>
-                        <ModalImg src={'./broken-phone.jpeg'} alt='picture' />
+                        <ModalImg src={'../../src/broken-phone.jpeg'} alt='picture' />
                         <ModalContent>
                             <h1>Thank you</h1>
                             <p>You're message has been received</p>

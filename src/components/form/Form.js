@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import { Modal } from './Modal'
-import { GlobalStyle, StyledButton, StyledError, StyledForm, StyledFormWrapper, StyledInput, StyledTextArea } from './Styles'
+import { Container, GlobalStyle, StyledButton, StyledError, StyledForm, StyledFormWrapper, StyledInput, StyledTextArea } from './Styles'
 
 export default function Form() {
     const initialState = {
@@ -73,7 +73,7 @@ export default function Form() {
                       <p>{error}</p>
                     </StyledError>  
                 )}
-                <StyledButton type='submit' onClick={openModal}>Submit</StyledButton>
+                <StyledButton type='submit' onClick={openModal}>Submit</StyledButton>    
                 <Modal showModal={showModal} setShowModal={setShowModal} />
             </StyledForm>
         </StyledFormWrapper>

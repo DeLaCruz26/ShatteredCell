@@ -6,7 +6,7 @@ export const GlobalStyle = createGlobalStyle`
        box-sizing: border-box;
        margin: 0;
        padding: 0;
-       font-family: 'Arial, sans-serif;
+       font-family: Arial, Helvetica, sans-serif;
    }
 `;
 
@@ -25,7 +25,7 @@ export const StyledFormWrapper = styled.div`
     justify-content: center;
     align-items: center;
     height: 100vh;
-    padding: 0 20px;
+    padding: 0px 20px;
 `;
 
 export const StyledForm = styled.form`
@@ -70,6 +70,13 @@ export const StyledError = styled.div`
     font-weight: 800;
     margin: 0 0 20px 0;
 `;
+
+export const Container = styled.div`
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   height: 100vh
+`
 
 export const Background = styled.div`
     width: 100%;
