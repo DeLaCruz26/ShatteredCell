@@ -8,6 +8,7 @@ export default class Schedule extends Component {
                 <div className='schedule-wrapper'>
                     <h1>Schedule an appointment</h1>
                 </div>
+                
             </div>
         )
     }
