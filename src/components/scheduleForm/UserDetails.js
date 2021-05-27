@@ -1,71 +1,32 @@
-import React, { Component } from 'react'
-import TextField from '@material-ui/core/TextField'
-import Button from '@material-ui/core/Button'
-import { withStyles } from '@material-ui/core/styles'
-import PropTypes from 'prop-types'
+import React from 'react'
+import { GlobalStyle, StyledButton, StyledError, StyledForm, StyledFormWrapper, StyledInput, StyledTextArea } from '../Styles'
 
-const styles = {
-    floatingLabelFocusStyle: {
-        color: 'black'
-    }
-}
 
-class UserDetails extends Component {
-    continue = event => {
+export default function UserDetails(props) {
+    const continueForm = event => {
         event.preventDefault()
-        this.props.nextStep()
+        props.nextStep()
     }
 
-    render() {
-        const { classes } = this.props
-        const { values, handleChange } = this.props
-        return (
-                <>
-                    <TextField 
-                        label='First Name'
-                        onChange={handleChange('firstName')}
-                        defaultValue={values.firstName}
-                        margin='normal'
-                        InputLabelProps={{
-                            className: classes.floatingLabelFocusStyle
-                        }}
-                        fullWidth
-                    />
-                    <TextField 
-                        label='Last Name'
-                        onChange={handleChange('lastName')}
-                        defaultValue={values.lastName}
-                        margin='normal'
-                        InputLabelProps={{
-                            className: classes.floatingLabelFocusStyle
-                        }}
-                        fullWidth
-                    />
-                    <TextField 
-                        label='Email'
-                        onChange={handleChange('email')}
-                        defaultValue={values.email}
-                        margin='normal'
-                        InputLabelProps={{
-                            className: classes.floatingLabelFocusStyle
-                        }}
-                        fullWidth
-                    />
-                    <br />
-                    <br />
-                    <Button
-                        color='secondary'
-                        variant='contained'
-                        onClick={this.continue}
-                        style={{backgroundColor: '#ba000d'}}
-                    >Continue</Button>
-                </>
-        )
-    }
+    return (
+        <>
+        <GlobalStyle />
+        <StyledFormWrapper>
+            <StyledForm>
+                <h2>Schedule Form</h2>
+                <br />
+                <label htmlFor='name'>First Name</label>
+                <StyledInput 
+                    placeholder='Enter Your First Name' 
+                    onChange={props.handleChange('fristName')}
+                    defaultValue={props.values.firstName}
+                />
+                <label htmlFor='name'>Last Name</label>
+                <StyledInput 
+                    onChange={props.handleChange('lastName')}
+                />
+            </StyledForm>
+        </StyledFormWrapper>
+        </>
+    )
 }
-
-UserDetails.propTypes = {
-    classes: PropTypes.object.isRequired
-}
-
-export default withStyles(styles)(UserDetails)
