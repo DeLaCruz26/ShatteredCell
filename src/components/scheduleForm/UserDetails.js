@@ -19,21 +19,21 @@ export default function UserDetails(props) {
                 <label htmlFor='name'>First Name</label>
                 <StyledInput 
                     type='text'
-                    placeholder='Enter Your First Name' 
+                    placeholder='Enter First Name' 
                     onChange={handleChange('fristName')}
                     defaultValue={values.firstName}
                 />
                 <label htmlFor='name'>Last Name</label>
                 <StyledInput 
                     type='text'
-                    placeholder='Enter Your Last Name'
+                    placeholder='Enter Last Name'
                     onChange={handleChange('lastName')}
                     defaultValue={values.lastName}
                 />
                 <label htmlFor='email'>Email</label>
                 <StyledInput 
                     type='email'
-                    placeholder='Enter Your Email'
+                    placeholder='Enter Email'
                     onChange={handleChange('email')}
                     defaultValue={values.email}
                 />

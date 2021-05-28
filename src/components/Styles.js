@@ -51,10 +51,24 @@ export const StyledTextArea = styled.textarea`
     ${sharedStyles}
 `;
 
+export const StyledList = styled.ul`
+   list-style: none;
+   padding: 0px 20px;
+   background-color: #fff;
+
+`;
+
+export const StyledListItem = styled.li`
+   display: flex;
+   flex-direction: column;
+   padding: 10px 0px;
+   border-top: 1px solid #ddd
+`
+
 export const StyledButtonWrapper = styled.div`
    display: flex;
    flex-direction: row;
-`
+`;
 
 export const StyledButton = styled.button`
     display: block;
