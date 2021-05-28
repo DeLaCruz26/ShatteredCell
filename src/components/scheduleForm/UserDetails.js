@@ -20,7 +20,7 @@ export default function UserDetails(props) {
                 <StyledInput 
                     type='text'
                     placeholder='Enter First Name' 
-                    onChange={handleChange('fristName')}
+                    onChange={handleChange('firstName')}
                     defaultValue={values.firstName}
                 />
                 <label htmlFor='name'>Last Name</label>
