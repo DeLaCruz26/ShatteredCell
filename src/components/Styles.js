@@ -24,7 +24,7 @@ export const StyledFormWrapper = styled.div`
     justify-content: center;
     align-items: center;
     height: 100vh;
-    padding: 0px 20px;
+    padding: 20px 0 10px 0;
 `;
 
 export const StyledForm = styled.form`
@@ -68,5 +68,10 @@ export const StyledError = styled.div`
     color: red;
     font-weight: 800;
     margin: 0 0 20px 0;
+`;
+
+export const StyledSelect = styled.select`
+   display: block;
+   width: 100%
 `;
 
