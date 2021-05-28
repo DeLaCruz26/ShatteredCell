@@ -51,6 +51,11 @@ export const StyledTextArea = styled.textarea`
     ${sharedStyles}
 `;
 
+export const StyledButtonWrapper = styled.div`
+   display: flex;
+   flex-direction: row;
+`
+
 export const StyledButton = styled.button`
     display: block;
     background-color: #f7797d;
@@ -60,6 +65,7 @@ export const StyledButton = styled.button`
     border-radius: 5px;
     heigth: 40px;
     padding: 5px 20px;
+    margin-right: 10px;
     cursor: pointer;
     box-sizing: border-box;
 `;
@@ -68,10 +74,5 @@ export const StyledError = styled.div`
     color: red;
     font-weight: 800;
     margin: 0 0 20px 0;
-`;
-
-export const StyledSelect = styled.select`
-   display: block;
-   width: 100%
 `;
 
