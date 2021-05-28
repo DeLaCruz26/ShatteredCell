@@ -18,7 +18,7 @@ export default function Appointment(props) {
         <GlobalStyle />
         <StyledFormWrapper>
             <StyledForm>
-                <h2>Select Repair Type & Time/Date</h2>
+                <h2>Add Repair Type | Select Date & Time</h2>
                 <br />
                 <label htmlFor='repair'>Repair Type</label>
                 <StyledInput 

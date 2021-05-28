@@ -61,8 +61,9 @@ export const StyledList = styled.ul`
 export const StyledListItem = styled.li`
    display: flex;
    flex-direction: column;
-   padding: 10px 0px;
-   border-top: 1px solid #ddd
+   padding: 15px 10px;
+   border-top: 1px solid #ddd;
+   font-weight: bold;
 `
 
 export const StyledButtonWrapper = styled.div`

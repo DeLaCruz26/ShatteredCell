@@ -40,6 +40,7 @@ export default function Form() {
                 <br />
                 <label htmlFor='name'>Name</label>
                 <StyledInput 
+                    placeholder='Enter Name'
                     type='text' 
                     name='name' 
                     value={state.name} 
@@ -57,6 +58,7 @@ export default function Form() {
                 />
                 <label htmlFor='message'>Message</label>
                 <StyledTextArea 
+                    placeholder='Ask A Question'
                     name='message' 
                     value={state.message} 
                     onChange={handleInput} 
