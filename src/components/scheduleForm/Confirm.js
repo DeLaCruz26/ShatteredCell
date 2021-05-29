@@ -2,6 +2,11 @@ import React from 'react'
 import { GlobalStyle, StyledButton, StyledButtonWrapper, StyledForm, StyledFormWrapper, StyledList, StyledListItem } from '../Styles'
 
 export default function Confirm(props) {
+    const continueForm = event => {
+        event.preventDefault()
+        props.nextStep()
+    }
+
     const back = event => {
         event.preventDefault()
         props.prevStep()
@@ -9,7 +14,6 @@ export default function Confirm(props) {
 
     const handleSubmit = event => {
         event.preventDefault()
-
     }
 
     const { values } = props
@@ -36,7 +40,7 @@ export default function Confirm(props) {
                 </StyledList>
                 <StyledButtonWrapper>
                     <StyledButton onClick={back}>Back</StyledButton>
-                    <StyledButton type='submit'>Submit</StyledButton>
+                    <StyledButton type='submit' onClick={continueForm}>Submit</StyledButton>
                 </StyledButtonWrapper>
             </StyledForm>
         </StyledFormWrapper>

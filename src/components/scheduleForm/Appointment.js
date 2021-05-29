@@ -23,7 +23,7 @@ export default function Appointment(props) {
                 <label htmlFor='repair'>Repair Type</label>
                 <StyledInput 
                     type='text'
-                    placeholder='Enter Type'
+                    placeholder="What's Broken? (e.g., 'Front Glass', 'Back Glass', 'Front Camera', 'Back Camera', 'Battery'"
                     onChange={handleChange('repair')}
                     defaultValue={values.repair}
                 />

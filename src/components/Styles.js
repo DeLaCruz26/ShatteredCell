@@ -35,6 +35,16 @@ export const StyledForm = styled.form`
     border-radius: 10px;
     box-sizing: border-box;
     box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.2);
+
+    h1, h2, p {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    p {
+        padding-top: 20px;
+    }
 `;
 
 export const StyledInput = styled.input`

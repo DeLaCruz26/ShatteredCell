@@ -2,6 +2,7 @@ import React, { Component } from 'react'
 import UserDetails from './UserDetails'
 import Appointment from './Appointment'
 import Confirm from './Confirm'
+import Success from './Success'
 
 export default class Form extends Component {
     state = {
@@ -65,6 +66,8 @@ export default class Form extends Component {
                         values={values} 
                     />
                 )
+                case 4:
+                    return <Success />
             default:
                 break;
         }
