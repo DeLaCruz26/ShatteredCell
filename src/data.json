@@ -3,7 +3,7 @@
         "id": 1,
         "title": "iPhone",
         "image": "/images/iphone.jpeg",
-        "desc": "",
+        "desc": "Click learn more to see specific services for iPhones",
         "alt": "iPhone pic",
         "ctaText": "Learn More"
     },
@@ -11,7 +11,7 @@
         "id": 2,
         "title": "Samsung",
         "image": "/images/samsung.jpeg",
-        "desc": "",
+        "desc": "Click learn more to see specific services for Samsung",
         "alt": "Samsung pic",
         "ctaText": "Learn More"
     },
@@ -19,7 +19,7 @@
         "id": 3,
         "title": "Smartphones",
         "image": "/images/smartphones.jpeg",
-        "desc": "",
+        "desc": "Click learn more to see specific services for smartphones",
         "alt": "Smartphones pic",
         "ctaText": "Learn More"
     },
@@ -27,7 +27,7 @@
         "id": 4,
         "title": "Computers",
         "image": "/images/computers.jpeg",
-        "desc": "",
+        "desc": "Click learn more to see specific services for computers",
         "alt": "Computer pic",
         "ctaText": "Learn More"
     },
@@ -35,7 +35,7 @@
         "id": 5,
         "title": "Consoles",
         "image": "/images/consoles.jpeg",
-        "desc": "",
+        "desc": "Click learn more to see specific services for consoles",
         "alt": "Consoles pic",
         "ctaText": "Learn More"
     },
@@ -43,7 +43,7 @@
         "id": 6,
         "title": "Wearables",
         "image": "/images/wearables.jpeg",
-        "desc": "",
+        "desc": "Click learn more to see specific services for wearables",
         "alt": "Wearables pic",
         "ctaText": "Learn More"
     }
