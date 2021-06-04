@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 import '../App.css'
 import { DeviceCard } from './servicesCards/'
 import devices from '../data.json'
@@ -12,7 +12,7 @@ export default function Services() {
                     <DeviceCard.Body>
                         <DeviceCard.Title>{device.title}</DeviceCard.Title>
                         <DeviceCard.Text>{device.desc}</DeviceCard.Text>
-                        <DeviceCard.Button>{device.ctaText}</DeviceCard.Button>
+                        <DeviceCard.Button id={device.id}>{device.ctaText}</DeviceCard.Button>
                     </DeviceCard.Body>
                 </DeviceCard>
             ))}
