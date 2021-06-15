@@ -1,6 +1,5 @@
-# Getting Started with Create React App
-
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# Shattered Cell
+  Shattered cell is a side business I started about 6 years ago. I got into fixing cellphones, tablets, and many other devices. Before I would have customers contact me through Facebook or IG to fix their device, but since I learned how to code I am able to build my own web applications. A user can check out which services I provide and which devices I can repair. You can schedule a repair which takes you through a step form to enter all the details, but if you dont see what you are looking for, there is a contact form where a user can submit a question.
 
 ## Available Scripts
 
